@@ -48,14 +48,14 @@ nav {
 }
 /* Introductie sectie met achtergrondafbeelding */
 .intro {
-    background-image: url('../images/cinema-background.jpg'); /* Voeg een filmgerelateerde achtergrond toe */
+    background-image: url('../images/cinema-background.jpg'); 
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
     text-align: center;
     color: #ffffff;
     position: relative;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7); /* Donkere overlay voor leesbaarheid */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7); /* Donkere overlay  */
 }
 
 /* Introductietekst */
