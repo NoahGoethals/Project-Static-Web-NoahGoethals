@@ -168,6 +168,31 @@ nav {
     padding: 40px 20px;
 }
 
+/* Gerelateerde Films knop */
+.related-button-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.related-button {
+    background-color: #ff0000;
+    color: #f4f1f1;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+}
+
+.related-button:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+
 /* Filmitems als klikbare knoppen */
 .film-item {
     background-color: #1a1a1a;
