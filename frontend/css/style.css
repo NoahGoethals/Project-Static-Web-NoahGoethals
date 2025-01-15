@@ -1,3 +1,4 @@
+/* Algemene instellingen */
 * {
     margin: 0;
     padding: 0;
@@ -5,21 +6,97 @@
     font-family: Arial, sans-serif;
 }
 
+/* Achtergrond en tekstkleur */
 body {
     background-color: #121212;
     color: #ffffff;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #121212;
-    color: #ffffff;
+/* Navigatiebalk */
+header {
+    background-color: #000000;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Logo en tekst */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.logo-text {
+    color: #ff0000;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* Introductie sectie met achtergrondafbeelding */
+.intro {
+    background-image: url('../images/cinema-background.jpg'); /* Voeg een filmgerelateerde achtergrond toe */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7); /* Donkere overlay voor leesbaarheid */
+}
+
+/* Introductietekst */
+.intro-content h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.7); /* Rode gloed */
+}
+
+/* FilmCentral in rood */
+.intro-content h1 span {
+    color: #ff0000;
+}
+
+/* Beschrijvende tekst */
+.intro-content p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+/* Call-to-action knop */
+.cta-button {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.7);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover-effect voor knop */
+.cta-button:hover {
+    background-color: #cc0000;
+    transform: scale(1.1);
+}
+
+/* Navigatielinks */
 .nav-links {
     list-style: none;
     display: flex;
@@ -38,6 +115,8 @@ body {
     background-color: #ff0000;
     border-radius: 5px;
 }
+
+/* Zoekbalk */
 .search-bar {
     display: flex;
     align-items: center;
@@ -65,49 +144,26 @@ body {
 .search-bar button:hover {
     background-color: #cc0000;
 }
+
+/* Introductie sectie */
 .intro {
-    background-image: url('../images/cinema-background.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
     text-align: center;
-    color: #ffffff;
-    position: relative;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    border-bottom: 3px solid #ff0000;
 }
 
-.intro-content h1 {
-    font-size: 3em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.7);
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-.intro-content h1 span {
-    color: #ff0000;
-}
-
-.intro-content p {
+.intro p {
     font-size: 1.2em;
-    color: #e0e0e0;
-    margin-bottom: 30px;
+    color: #cccccc;
 }
 
-.cta-button {
-    background-color: #ff0000;
-    color: #ffffff;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.7);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #cc0000;
-    transform: scale(1.1);
-}
+/* Sectietitels */
 .filmgrid-section h2 {
     font-family: Verdana, Arial, sans-serif;
     font-size: 2.5em;
@@ -119,6 +175,7 @@ body {
     letter-spacing: 1px;
 }
 
+/* Filmgrid */
 .filmgrid {
     display: flex;
     justify-content: center;
@@ -127,6 +184,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* Filmitems als klikbare knoppen */
 .film-item {
     display: block;
     background-color: #1a1a1a;
@@ -158,6 +216,70 @@ body {
     box-shadow: 0 4px 15px rgba(255, 0, 0, 0.8);
     background-color: #2a2a2a;
 }
+
+/* Filmdetail sectie */
+.film-detail {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.film-detail-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.film-detail-img {
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+}
+
+.film-info {
+    max-width: 600px;
+}
+
+.film-info h1 {
+    font-size: 2.8em;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.film-info p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+.watch-button {
+    padding: 12px 25px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.watch-button:hover {
+    background-color: #cc0000;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 2px solid #ff0000;
+    margin-top: 40px;
+}
+/* Footer algemeen */
 footer {
     background-color: #000000;
     color: #ffffff;
@@ -165,6 +287,7 @@ footer {
     border-top: 3px solid #ff0000;
 }
 
+/* Container voor de footer secties */
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -173,6 +296,7 @@ footer {
     margin: 0 auto;
 }
 
+/* Footer secties */
 .footer-section {
     flex: 1;
     min-width: 200px;
@@ -186,6 +310,27 @@ footer {
     text-transform: uppercase;
 }
 
+/* Footer links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff0000;
+}
+
+/* Onderste gedeelte van de footer */
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
