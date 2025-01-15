@@ -9,7 +9,7 @@
 /* Achtergrond en tekstkleur */
 body {
     background-color: #121212;
-    color: #ffffff;
+    color: #f4f1f1;
 }
 
 /* Navigatiebalk */
@@ -46,17 +46,6 @@ nav {
     font-weight: bold;
     text-transform: uppercase;
 }
-/* Introductie sectie met achtergrondafbeelding */
-.intro {
-    background-image: url('../images/cinema-background.jpg'); 
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
-    text-align: center;
-    color: #ffffff;
-    position: relative;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7); /* Donkere overlay  */
-}
 
 /* Introductietekst */
 .intro-content h1 {
@@ -78,25 +67,23 @@ nav {
     margin-bottom: 30px;
 }
 
-/* Call-to-action knop */
+/* Ontdek populaire films knop */
 .cta-button {
     background-color: #ff0000;
-    color: #ffffff;
+    color: #f4f1f1;
     padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     box-shadow: 0 4px 15px rgba(255, 0, 0, 0.7);
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* Hover-effect voor knop */
 .cta-button:hover {
-    background-color: #cc0000;
-    transform: scale(1.1);
+    background-color: #ff0000;
 }
 
-/* Navigatielinks */
+/* Navigatielinks bovenaan*/
 .nav-links {
     list-style: none;
     display: flex;
@@ -104,11 +91,10 @@ nav {
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: #f4f1f1;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -134,15 +120,14 @@ nav {
 .search-bar button {
     padding: 8px 12px;
     background-color: #ff0000;
-    color: #ffffff;
+    color: #f4f1f1;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .search-bar button:hover {
-    background-color: #cc0000;
+    background-color: #ff0000;
 }
 
 /* Introductie sectie */
@@ -160,10 +145,10 @@ nav {
 
 .intro p {
     font-size: 1.2em;
-    color: #cccccc;
+    color: #f4f1f1;
 }
 
-/* Sectietitels */
+/* Sectietitels of Titel boven de films */
 .filmgrid-section h2 {
     font-family: Verdana, Arial, sans-serif;
     font-size: 2.5em;
@@ -181,52 +166,49 @@ nav {
     justify-content: center;
     gap: 20px;
     padding: 40px 20px;
-    flex-wrap: wrap;
 }
 
 /* Filmitems als klikbare knoppen */
 .film-item {
-    display: block;
     background-color: #1a1a1a;
     width: 220px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
     text-align: center;
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     text-decoration: none;
-    color: #ffffff;
+    color: #f4f1f1;
     cursor: pointer;
 }
+/* Grote afbeeldingen */
 
 .film-item img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
     border-radius: 8px;
 }
+/* Titel en beschrijving onder de film */
 
 .film-item h3, .film-item p {
-    color: #ffffff;
+    color: #f4f1f1;
     margin-top: 10px;
 }
 
 .film-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.8);
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
     background-color: #2a2a2a;
 }
 
 /* Filmdetail sectie */
 .film-detail {
-    padding: 60px 20px;
+    padding: 60px 20px; /* tussen bovenste balk en beschrijving */
     background-color: #1a1a1a;
-    color: #ffffff;
+   
 }
 
 .film-detail-container {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     gap: 40px;
     max-width: 1200px;
@@ -238,6 +220,7 @@ nav {
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
 }
+/* Tekstblok naast de img  */
 
 .film-info {
     max-width: 600px;
@@ -252,51 +235,42 @@ nav {
 .film-info p {
     font-size: 1.1em;
     margin-bottom: 15px;
-    color: #cccccc;
+    color: #f4f1f1;
 }
+
+/* Trailer Knop */
 
 .watch-button {
     padding: 12px 25px;
     background-color: #ff0000;
-    color: #ffffff;
+    color: #f4f1f1;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .watch-button:hover {
-    background-color: #cc0000;
+    background-color: #ff0000;
 }
 
 /* Footer */
 footer {
     background-color: #000000;
-    color: #ffffff;
+    color: #f4f1f1;
     text-align: center;
     padding: 15px 0;
     border-top: 2px solid #ff0000;
     margin-top: 40px;
 }
-/* Footer algemeen */
-footer {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 40px 0;
-    border-top: 3px solid #ff0000;
-}
 
 /* Container voor de footer secties */
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: flex;      /* Liever opgesplits in */
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Footer secties */
 .footer-section {
     flex: 1;
     min-width: 200px;
@@ -313,17 +287,17 @@ footer {
 /* Footer links */
 .footer-section ul {
     list-style: none;
-    padding: 0;
 }
+
 
 .footer-section ul li {
     margin-bottom: 10px;
+
 }
 
 .footer-section ul li a {
-    color: #ffffff;
+    color: #f4f1f1;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
@@ -337,5 +311,5 @@ footer {
     border-top: 1px solid #333333;
     margin-top: 20px;
     font-size: 0.9em;
-    color: #cccccc;
+    color: #f4f1f1;
 }
