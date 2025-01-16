@@ -3,7 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+}
+/* Alle tekst in Lato */
+body, p, a, li, button, input {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Titels in Roboto */
+h1, h2, h3, h4, h5, h6, .logo-text, .cta-button, .film-item h3, .footer-section h3 {
+    font-family: 'Roboto', sans-serift;
 }
 
 /* Achtergrond en tekstkleur */
@@ -14,7 +22,7 @@ body {
 
 /* Navigatiebalk */
 header {
-    background-color: #000000;
+    background-color: #121212;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
 }
@@ -26,6 +34,25 @@ nav {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 40px;
+}
+
+/* Navigatielinks bovenaan*/
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #f4f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.nav-links a:hover {
+    background-color: #ff0000;
+    border-radius: 5px;
 }
 
 /* Logo en tekst */
@@ -65,6 +92,23 @@ nav {
     font-size: 1.2em;
     color: #e0e0e0;
     margin-bottom: 30px;
+}
+/* Introductie sectie */
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    border-bottom: 3px solid #ff0000;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #f4f1f1;
 }
 
 /* Ontdek populaire films knop */
@@ -130,23 +174,6 @@ nav {
     background-color: #ff0000;
 }
 
-/* Introductie sectie */
-.intro {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #1a1a1a;
-    border-bottom: 3px solid #ff0000;
-}
-
-.intro h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.intro p {
-    font-size: 1.2em;
-    color: #f4f1f1;
-}
 
 /* Sectietitels of Titel boven de films */
 .filmgrid-section h2 {
@@ -227,9 +254,8 @@ nav {
 
 /* Filmdetail sectie */
 .film-detail {
-    padding: 60px 20px; /* tussen bovenste balk en beschrijving */
+    padding: 60px 20px; /* Ruimte tuusen header en Info */
     background-color: #1a1a1a;
-   
 }
 
 .film-detail-container {
@@ -279,9 +305,23 @@ nav {
     background-color: #ff0000;
 }
 
+/* Gerelateerde films 2de pagina*/
+.related-films {
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    border-top: 3px solid #ff0000;
+}
+
+.related-films h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
-    background-color: #000000;
+    background-color: #1a1a1a;
     color: #f4f1f1;
     text-align: center;
     padding: 15px 0;
@@ -291,7 +331,7 @@ footer {
 
 /* Container voor de footer secties */
 .footer-container {
-    display: flex;      /* Liever opgesplits in */
+    display: flex;      
     max-width: 1200px;
     margin: 0 auto;
 }
