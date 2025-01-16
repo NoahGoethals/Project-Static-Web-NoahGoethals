@@ -11,7 +11,7 @@ body, p, a, li, button, input {
 
 /* Titels in Roboto */
 h1, h2, h3, h4, h5, h6, .logo-text, .cta-button, .film-item h3, .footer-section h3 {
-    font-family: 'Roboto', sans-serift;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Achtergrond en tekstkleur */
