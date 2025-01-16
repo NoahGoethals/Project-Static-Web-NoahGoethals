@@ -2,55 +2,12 @@
 body {
     background-color: #121212;  
     color: #f4f1f1;             
-    font-family: 'Ubuntu', sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Header stijl */
-header {
-    background-color: #000000;  
-    padding: 20px;
-    text-align: center;
-    color: #ff0000;            
-    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
-    margin-bottom: 20px;
-}
-
-/* Terug naar overzicht knop */
-.back-button {
-    display: inline-block;
-    background-color: #333;
-    color: #f4f1f1;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.back-button:hover {
-    background-color: #ff0000;
-    transform: scale(1.05);
-}
-
-/* Algemene stijl voor knoppen */
-button, .btn, .add-button {
-    background-color: #ff0000;  /* Rode achtergrond */
-    color: #f4f1f1;             /* Witte tekst */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
-}
-
-button:hover, .btn:hover, .add-button:hover {
-    background-color: #ff0000;
-    transform: scale(1.05);
-}
-
-/* Login Container */
+/* Login */
 .login-container {
     width: 350px;
     margin: 100px auto;
@@ -66,12 +23,11 @@ button:hover, .btn:hover, .add-button:hover {
 .login-container input[type="password"] {
     width: 90%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px;
     border: 1px solid #555;
     border-radius: 5px;
     background-color: #1a1a1a;
     color: #f4f1f1;
-    font-size: 1em;
 }
 
 .login-container input[type="text"]:focus,
@@ -97,41 +53,74 @@ button:hover, .btn:hover, .add-button:hover {
     transform: scale(1.05);
 }
 
+
+/* Header stijl beheerpagina */
+header {
+    background-color: #000000;  
+    padding: 20px;
+    text-align: center;
+    color: #ff0000;            
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+
+
 /* Film Beheer */
 .film-table table {
     width: 90%;
     margin: 20px auto;
     background-color: #1a1a1a;
-    border-collapse: collapse;
     color: #f4f1f1;
-    text-align: center;
 }
 
 .film-table th, .film-table td {
     padding: 12px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #313030;
     text-align: center;
 }
 
-/* Links in de Acties-kolom */
+/* Rechts in de Acties-kolom */
 .film-table a {
     color: #ff0000;
     text-decoration: none;
 }
 
-.film-table a:hover {
-    text-decoration: underline;
+/* Terug naar overzicht knop 3de pagina  */
+.back-button {
+    background-color: #333;
+    color: #f4f1f1;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-/* Zoekbalk in Beheerpagina */
-.search-section input[type="text"] {
-    width: 300px;
-    padding: 10px;
+.back-button:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+/*  stijl voor knoppen (voeg een film to en opslaan knop) */
+button, .btn, .add-button {
+    background-color: #ff0000;  
+    color: #f4f1f1;             
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
 }
-/* Film Toevoegen/Bewerken */
+
+button:hover, .btn:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+
+/* Film titel/Genre/ korte beschrijving */
 .film-form {
     width: 50%;
     margin: 0 auto;
@@ -146,20 +135,20 @@ input[type="text"], textarea {
     width: 90%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #555;
+    border: 1px solid #565454;
     border-radius: 5px;
     background-color: #1a1a1a;
     color: #f4f1f1;
-    font-size: 1em;
 }
 
 /* Tekstvak (Korte Beschrijving) */
 textarea {
-    height: 150px;
-    resize: none;
+    height: 250px;
+    font-family: sans-serif; 
+
 }
 
-/* Focus-effect voor invoervelden */
+/* Focus voor invoervelden */
 input[type="text"]:focus, textarea:focus {
     border-color: #ff0000;
     outline: none;
